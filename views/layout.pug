@@ -6,9 +6,19 @@ html
     meta(name='viewport', content='width=device-width, initial-scale=1.0')
     meta(name='theme-color' content='#4DA5F4')
     meta(name='csrf-token', content=_csrf)
-    title #{title} - Hackathon Starter
+    meta(name='og:facebook', content="bull-girl.jpg")
+    meta(name="og:url", content="http://workculturesurvey.com/")  
+    meta(name="og:type", content="http://workculturesurvey.com/") 
+    meta(name="og:title", content="The Global Workplace Harrassment Survey") 
+    meta(name="og:description", content="It's a serious problem, and we're going to do something about it. But first, we need to hear your stories.")  
+    meta(name="og:image", content="http://workculturesurvey.com/img/bull-girl.jpg")  
+
+    title #{title}
     link(rel='shortcut icon', href='/favicon.png')
     link(rel='stylesheet', href='/css/main.css')
+
+
+
 
   body
     include partials/header
