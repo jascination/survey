@@ -4,7 +4,7 @@ block content
   .page-header
     h3 Contact Form
 
-  form.form-horizontal(method='POST')
+  form#theForm.form-horizontal
     input(type='hidden', name='_csrf', value=_csrf)
     .form-group
       label(class='col-sm-2 control-label', for='name') Name
@@ -23,3 +23,13 @@ block content
         button.btn.btn-primary(type='submit')
           i.fa.fa-envelope
           | Send
+  
+  .alert.alert-success.hidden
+        p
+            | Great! We'll be in touch with you shortly.
+
+  .alert.alert-danger.hidden
+      p
+          | Oh snap! There was an error. Please email us directly at 
+          a(href="mailto:theworkculturesurvey@gmail.com") theworkculturesurvey@gmail.com
+
